@@ -1,0 +1,47 @@
+@import "vars";
+@import "libs";
+@import "fonts";
+@import "global";
+
+.header {
+    padding-top: 80px;
+    &__inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+        .logo {
+            width: 120px;
+            height: 35px;
+            img {
+                max-width: 100%;
+            } 
+        }
+    }
+}
+
+.promo {
+    padding-top: 114px;
+    min-height: 670px;
+    &__title {
+        max-width: 600px;
+        @extend %manrope-extrabold;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 15px 0;
+        span {
+            @extend %accent-green-color;
+        }
+    }
+    &__text {
+        @extend %manrope-medium;
+        @extend %main-text-color;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        max-width: 540px;
+        margin: 24px auto 0;
+        padding: 0 15px 0;
+    }
+}
