@@ -37,6 +37,7 @@
     &__text {
         @extend %manrope-medium;
         @extend %main-text-color;
+        z-index: 2;
         font-size: 15px;
         line-height: 25px;
         text-align: center;
@@ -44,4 +45,29 @@
         margin: 24px auto 0;
         padding: 0 15px 0;
     }
+    &__bg {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 459px;
+        position: relative;
+        z-index: -1;
+        img {
+            max-height: 100%;
+        } 
+    }
+    &__left {
+        position: relative;
+        bottom: 260px;
+    }
+    &__center {
+        position: relative;
+        bottom: 350px;
+
+    }
+    &__right {
+        position: relative;
+        bottom: 260px;
+    }
+    
 }
