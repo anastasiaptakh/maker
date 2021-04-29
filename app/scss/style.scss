@@ -20,7 +20,7 @@
 }
 
 .promo {
-    padding-top: 114px;
+    margin-top: 185px;
     min-height: 670px;
     &__title {
         max-width: 600px;
@@ -41,33 +41,29 @@
         font-size: 15px;
         line-height: 25px;
         text-align: center;
-        max-width: 540px;
+        max-width: 570px;
         margin: 24px auto 0;
         padding: 0 15px 0;
-    }
-    &__bg {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 459px;
+        &:after {
+            content: url('../images/promo-btn.svg');
+            position: absolute;
+            width: 26px;
+            height: 42px;
+            bottom: -90px;
+            right: 50%;
+            
+        }
+    } 
+}
+.promo__bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 300px;
+    z-index: -1;
+    &-center {
         position: relative;
-        z-index: -1;
-        img {
-            max-height: 100%;
-        } 
+        bottom: 60px;
     }
-    &__left {
-        position: relative;
-        bottom: 260px;
-    }
-    &__center {
-        position: relative;
-        bottom: 350px;
-
-    }
-    &__right {
-        position: relative;
-        bottom: 260px;
-    }
-    
 }
