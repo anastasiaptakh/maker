@@ -18,6 +18,7 @@ body{
     min-width: 320px;
     @extend %background-color;
     @extend %heading-color;
+    @extend %manrope-medium;
 
 }
 .container{
