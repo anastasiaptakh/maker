@@ -143,7 +143,6 @@
     }
     &__card-text {
         @extend %manrope-medium;
-        @extend %main-text-color;
         font-size: 15px;
         line-height: 25px;
         max-width: 400px;
@@ -160,23 +159,28 @@
     }
     &__card-left {
         position: absolute;
-        top: 7px
+        top: -10px;
     }
     &__card-right {
         position: absolute;
         top: -33px;
     }
 }
-.card-list__item {
-    @extend %manrope-medium;
-    font-size: 15px;
-    line-height: 25px;
-    margin-top: 12px;
-    padding-left: 27px;
-    &:first-child {
-        margin-top: 0;
+.card-list {
+    margin-top: 19px;
+    &__item {
+        @extend %manrope-medium;
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 12px;
+        padding-left: 27px;
+        position: relative;
+        &:first-child {
+            margin-top: 0;
+        }
     }
 }
+
 .card-left {
     @extend %heading-color;
     padding: 48px 38px;
@@ -187,10 +191,28 @@
     margin-right: 30px;
 }
 .card-right {
-    color: #080C20;
+    color: #080c20;
     min-width: 445px;
-    min-height: 482px;
+    min-height: 449px;
     background-color: #3EE9E5;
     border-radius: 8px;
     padding: 60px 38px;
+}
+.left-item {
+    position: relative;
+    &::before {
+        content: url('../images/left-check.svg');
+        position: absolute;
+        left: 2px;
+        bottom: 2px;
+    }
+}
+.right-item {
+    position: relative;
+    &::before {
+        content: url('../images/right-check.svg');
+        position: absolute;
+        left: 5px;
+        bottom: 0;
+    }
 }
