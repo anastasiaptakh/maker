@@ -259,14 +259,19 @@
         @extend %manrope-extrabold;
         min-width: 320px;
         height: 48px;
-        padding: 11px 18px 12px 0;
+        padding: 11px 0px;
         background-color: #093F68;
         border-radius: 24px;
         border: none;
         outline: none;
         margin-right: 16px;
-        &::placeholder {
+        &[type=email] {
+            @extend %main-text-color;
             padding-left: 18px;
+
+        }
+        &::placeholder {
+            padding-left: 0px;
         }
     }
     &__btn {
