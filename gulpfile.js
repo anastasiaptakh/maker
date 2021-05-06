@@ -20,7 +20,8 @@ gulp.task('scss', function(){
     }))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css'))
-    .pipe(browserSync.reload({stream: true}))
+    /* .pipe(browserSync.reload({stream: true})) */
+    .pipe(browserSync.stream())
 });
 
 gulp.task('css' , function(){
@@ -37,6 +38,8 @@ gulp.task('css' , function(){
 gulp.task('html', function(){
    return gulp.src('app/*.html')
    .pipe(browserSync.reload({stream: true}))
+   
+  
 });
 
 gulp.task('script', function(){

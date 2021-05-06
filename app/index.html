@@ -104,20 +104,21 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <img class="footer__img" src="images/footer-bg.png" alt="footer-background">
+    <section class="subscription">
+        <img src="images/footer-bg.png" alt="line">
         <div class="container">
-            <div class="footer__inner">
-            <h2 class="footer__title">Get notified when we launch</h2>
-                <form action="#" class="footer__form novalidate">
-                    <div class="footer__input-inner">
-                        <input class="footer__input" type="email" required placeholder="Email address">
-                        <span class="invalid"></span>
-                    </div>
-                        <button class="footer__btn">Get notified</button>
-                </form>
-            </div>
+            <h2 class="form__title">Get notified when we launch</h2>
+            <form action="#" class="form" novalidate>
+                <div class="form__error">
+                    <input type="email" name="email" required placeholder="Email address">
+                    <span class="invalid"></span>
+                </div>
+
+                <button class="button">Get notified</button>
+            </form>
         </div>
-    </footer>
+    </section>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
